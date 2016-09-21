@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<title>Vehicle Search</title>
+	<link rel="stylesheet"  href="nessTest.css">
+</head>
+<body>
+	<h2>Vehicle Search</h2>
+	<div id="outer">
+		
+		<form>
+
+			<section>
+			<section>
+				<div>Type</div>
+				<select name="select" id="select">
+  					<option value="#" selected>Select a Type</option> 
+  					<option value="New">New</option>
+  					<option value="Used">Used</option>
+  					<option value="Certified">Certified</option>
+				</select>
+			</section>
+			<section>
+				<div>Make</div>
+				<input type="text" id="make"/>
+			</section>
+			<section>
+				<div>Model</div>
+				<input type="text" id="model"/>
+			</section>
+			<section>
+				<input type="button" value="+" id="add" class="button" />
+			</section>
+			<hr>
+
+			<input type="search" id="search"/>
+			</section>
+		</form>
+			<table id="myDynamicTable"></table>
+	</div>
+
+	<div style="margin-left:61em">
+		<input type="button" value="JSON" id="toJson" class="button" />
+	</div>
+	<div id="view"></div>
+	<script src="nessTest.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+</body>
+</html>
